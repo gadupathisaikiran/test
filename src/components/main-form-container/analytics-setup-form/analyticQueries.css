@@ -1,0 +1,54 @@
+.analyticsQueriesCardContainer {
+  overflow-y: scroll;
+  height: calc(100vh - 186px);
+  margin-top: 6%;
+}
+
+.headingAqs{
+  margin-left: 5%;
+  margin-top: 6%;
+  color: #000;
+	font-family: Acherus Grotesque;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 22px;
+}
+
+.allCardsContainer {
+  margin-bottom: 10px;
+
+}
+
+.cardContainerAqs {
+  width: 100%;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  /* padding-left: 25px; */
+  background: #fff;
+  /* margin-bottom: 10px; */
+  overflow: hidden;
+  color: #2a333e;
+  font-family: Acherus Grotesque;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+.even-bg {
+  background-color: rgba(247, 247, 247, 1);
+}
+.scrollbar::-webkit-scrollbar {
+	width: 6px;
+	height: 5px;
+  }
+  
+  .scrollbar::-webkit-scrollbar-thumb {
+	background-color: #ccc;
+	height: 10px;
+  }
+  
+  .scrollbar::-webkit-scrollbar-track {
+	background-color: #f0f0f0;
+	height: 10px;
+  }

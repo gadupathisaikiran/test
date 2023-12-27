@@ -1,0 +1,89 @@
+name: CI, CD, CT for edoaas UI
+
+env:
+  ENVIRONMENT: prod
+  ARTIFACT_RETENTION_DAYS: 10
+  CODE_PATH: /home/runner/work/edoaas/edoaas
+  DEPLOYMENT_PLATFORM: az
+
+
+# Events
+on:
+  push:
+     branches: [ qa ]
+  pull_request:
+    branches: [ qa ]
+
+jobs:
+  ########## job to build the package and deploy to sonar for code analysis
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest         
+    outputs:
+      deploymentPlatform: ${{ steps.init.outputs.deploymentPlatform }}
+    
+    steps:        
+      - name: Environment variables to output 
+        id: init
+        run: |
+          echo "deploymentPlatform=${{ env.DEPLOYMENT_PLATFORM }}" >> $GITHUB_OUTPUT
+          
+  RUN_ON_AZ:
+  
+    name: RUN_ON_AZ
+    needs: build
+    runs-on: ubuntu-latest
+    
+    if: needs.build.outputs.deploymentPlatform == 'az'
+
+    steps:
+
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - name: Azure login
+        id: login
+        uses: azure/login@v1.4.3
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Unshallow the checkout
+        run: |
+          git fetch --prune --unshallow --tags
+          git tag --list
+          
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: |
+          export NODE_OPTIONS="--max_old_space_size=4096"
+          npm i -f
+          
+      - name: Build project
+        run: |
+          export NODE_OPTIONS="--max_old_space_size=4096"
+          CI=false npm run build
+
+      - name: check folders
+        run: |
+          ls -lrth
+        
+      - name: Publish app
+        uses: Azure/cli@v1.0.0
+        with:
+          azcliversion: latest
+          inlineScript: |
+            az storage blob upload-batch -s $GITHUB_WORKSPACE/build -d \$web --account-name edoaidtaascom --overwrite
+
+      - name: Purge CDN
+        run:
+          az afd endpoint purge -g mobius-prod-rg --profile-name mobius-websites-prod-cdn --domains edo.aidtaas.com --endpoint-name edoaidtaascom --content-paths '/*'
+          
+      - name: Azure service principal logout
+        run: |
+          az logout

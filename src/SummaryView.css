@@ -1,0 +1,28 @@
+.dashboard-select select{
+    outline:none;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(107, 118, 138, 0.05);
+    width: 400px;
+    margin-bottom: 10px;
+}
+.dashboard-select{
+    display: flex;
+    justify-content: center;
+}
+#gotoDashboard{
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    width: 118px;
+    height: 32px;
+    background-color: #003399;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 4px 13px 4px 7px;
+}
+.dasboard-button{
+    position: relative;
+}

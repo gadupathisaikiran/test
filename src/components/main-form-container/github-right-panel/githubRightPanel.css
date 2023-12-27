@@ -1,0 +1,143 @@
+.github-right-panel {
+  width: 40%;
+  padding: 24px;
+  padding-top: 0;
+  font-weight: 300;
+  overflow-y: scroll;
+}
+.git-repo-general-info {
+  padding-top: 12px;
+}
+.git-repo-general-info span {
+  display: inline-block;
+  padding: 4px 0;
+  color: var(
+    --github-com-vasturiano-3-d-force-graph-1470-x-791-light-nevada,
+    #656d76
+  );
+  font-family: Acherus Grotesque;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+.git-repo-general-info img {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 8px;
+}
+.git-repo-collab {
+  font-weight: 700;
+  margin: 16px 0;
+}
+.git-repo-languages:first-child {
+  height: 70px;
+}
+.git-repo-collab span {
+}
+.git-repo-collab-contributer {
+  color: var(
+    --github-com-vasturiano-3-d-force-graph-1470-x-791-light-shark,
+    #1f2328
+  );
+  font-family: Acherus Grotesque;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.git-repo-collab-contributer-number {
+  color: var(
+    --github-com-vasturiano-3-d-force-graph-1470-x-791-light-shark,
+    #1f2328
+  );
+  text-align: center;
+  font-family: Acherus Grotesque;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+.git-repo-collab-contributer-number-container {
+  display: inline-flex;
+  min-width: 20px;
+  padding: 1px 7.145px 1px 7.345px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-0, 0px);
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #afb8c133;
+}
+.git-repo-collab-avatars {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.git-repo-collab img {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.git-repo-compatible-heading,
+.git-repo-compliance-heading {
+  color: var(
+    --github-com-vasturiano-3-d-force-graph-1470-x-791-light-shark,
+    #1f2328
+  );
+  font-family: Acherus Grotesque;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.git-repo-compatible img,
+.git-repo-compliance img {
+  margin: 10px 10px 10px 0;
+}
+.git-repo-issues {
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.git-repo-issues div {
+  width: 30%;
+}
+.git-repo-issues-heading {
+  color: var(
+    --github-com-vasturiano-3-d-force-graph-1470-x-791-light-shark,
+    #1f2328
+  );
+  font-family: Acherus Grotesque;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+}
+.git-repo-issues img {
+  vertical-align: middle;
+  padding-right: 5px;
+}
+.git-repo-issues-data {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(
+    --github-com-vasturiano-3-d-force-graph-1470-x-791-light-shark,
+    #1f2328
+  );
+  font-family: Acherus Grotesque;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+}
+.git-repo-compatible,
+.git-repo-compliance {
+  height: auto;
+}
+.git-repo-collab-avatars-collab-error {
+  font-weight: 300;
+  color: red;
+}

@@ -1,0 +1,92 @@
+.list-item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+}
+.list-item > label {
+	width: fit-content;
+}
+.multiselect-container {
+	display: flex;
+	justify-content: flex-end;
+	transform: translateX(-50%);
+}
+.node-container {
+	position: relative;
+	width: 60%;
+}
+.node-container > img {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: -15px;
+	left: -25px;
+}
+
+.tree-row {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	border-bottom: 1px solid #eee;
+}
+
+.search-param-control {
+	width: 100%;
+	padding: 10px 5px;
+	border-radius: 5px;
+	background-color: rgba(107, 118, 138, 0.05);
+	border: none;
+	max-width: 200px;
+	margin-left: 10px;
+}
+
+.search-param-control:focus {
+	outline: none;
+}
+
+.bg-blue {
+	color: #039;
+	font-weight: bold;
+}
+
+ul.output-params-container {
+	padding-top: 60px;
+	height: 100%;
+	overflow: auto;
+	margin-left: 20px;
+	padding-right: 10px;
+	position: relative;
+	z-index: 10;
+	background-color: #fff;
+}
+::-webkit-scrollbar {
+	width: 4px;
+}
+ul.output-params-container ::-webkit-scrollbar {
+	width: 4px;
+	height: 5px;
+}
+
+ul.output-params-container::-webkit-scrollbar-track {
+	background-color: #f0f0f0;
+	height: 10px;
+}
+
+ul.output-params-container::-webkit-scrollbar-thumb {
+	width: 4px;
+	background-color: #000;
+	height: 10px;
+}
+
+ul.output-params-container > .list-item {
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+ul.output-params-container > .list-item:nth-child(2n + 1) {
+	background-color: #eee;
+}

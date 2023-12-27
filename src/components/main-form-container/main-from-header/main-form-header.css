@@ -1,0 +1,88 @@
+.main-form-header {
+	height: 40px;
+	border-bottom: 1px solid #eee;
+	padding: 0;
+}
+
+.main-form-header > nav {
+	width: 100%;
+	height: 100%;
+}
+
+.main-form-header > nav > ul {
+	width: 100%;
+	min-width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	/* align-items: center; */
+	padding: 0;
+	margin: 0;
+}
+
+.main-form-header > nav > ul > .list-item {
+	list-style: none;
+	padding: 0 20px;
+	cursor: pointer;
+	width: fit-content !important;
+}
+
+.main-form-header > nav > ul > .list-item:last-child {
+	margin-left: auto;
+}
+
+.main-form-header > nav > ul > .list-item > span {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	/* width: 24px; */
+	height: 24px;
+	border-radius: 4px;
+	background: #edf3ff;
+	margin-right: 5px;
+	color: #6b768a;
+}
+
+.main-form-header > nav > ul > .list-item > span.highlight {
+	background-color: #003399;
+	color: #fff;
+}
+
+.list-item > button {
+	display: inline-flex;
+	width: 118px;
+	height: 32px;
+	padding: 4px 30px 4px 28px;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+	color: #003399;
+	border-radius: 5px;
+	border: none;
+}
+
+.list-item > button.discard-btn {
+    margin-left: 60px;
+}
+
+.list-item > button.save-btn {
+    background-color: #003399;
+    color: #fff;
+}
+
+.list-item > button.save-btn-1 {
+    background-color: #003399;
+    color: #fff;
+    /* margin-right: 100px; */
+}
+
+
+
+.list-item > button.next-btn {
+	background-color: #003399;
+	color: #fff;
+}
+
+.border-btm {
+	border-bottom: 2px solid #003399;
+}

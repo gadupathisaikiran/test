@@ -1,0 +1,75 @@
+.manage-form-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 100%;
+	max-width: 800px;
+	box-sizing: border-box;
+	/* height: 90vh; */
+	overflow: auto;
+}
+
+.manage-form-container > .form-group {
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	padding: 20px;
+	border: 1px solid #dedede;
+	margin: 20px;
+	width: 95%;
+}
+
+.workflow-label {
+	color: #26282c;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.api-name {
+	color: black;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 22px; /* 137.5% */
+}
+
+.workflow-select {
+	width: 70%;
+	height: 36px;
+	border: none;
+	border-radius: 5px;
+	background: rgba(107, 118, 138, 0.05);
+}
+
+.workflow-select:focus {
+	outline: none;
+}
+
+.workflow-container {
+	width: 100%;
+}
+
+.workflow-card {
+	display: flex;
+	width: 100%;
+	min-width: 100%;
+	padding: 20px;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 4px;
+	border: 1px solid #edf3ff;
+	background: #fff;
+}
+
+.workflow-card img {
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+}
+.workflowselect{
+	border-radius: 4px;
+border: 1px solid #88B0FF;
+background: #E9F0FF;
+}

@@ -1,0 +1,45 @@
+.search-palette {
+	width: 50%;
+	border-left: 1px solid #dce2eb;
+	padding: 20px;
+	/* height: 90vh; */
+	display: flex;
+}
+.tree-container {
+	width: 50%;
+	height: 100%;
+}
+.tree-container > input {
+	border: none;
+	padding: 5px 20px;
+	border-bottom: 2px solid #6b768a;
+	margin-left: 20px;
+	background-color: #f7f8f9;
+	border-radius: 2px;
+}
+
+.tree-container > input:focus {
+	outline: none;
+}
+
+.search-palette > ul {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.search-palette > ul > li {
+	padding: 10px;
+	border-bottom: 1px solid #dedede;
+	font-family: "Roboto", "sans-serif";
+}
+
+.search-palette > ul > li > label {
+	cursor: pointer;
+	width: 100%;
+}
+
+.search-palette input[type="checkbox"] {
+	margin-right: 10px;
+}

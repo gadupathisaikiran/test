@@ -1,0 +1,21 @@
+.main-container {
+	display: flex;
+	/* height: calc(100vh - 80px); */
+	/* height: calc(100vh - 60px); */
+	overflow: auto;
+	/* position: fixed; */
+	
+}
+
+.main-form-container {
+	width:calc(100vw - 362px);
+	height: 100%;
+	padding-left: 20px;
+}
+
+.forms-container {
+	/* width: 80vw; */
+	height: 100%;
+	overflow: auto;
+	display: flex;
+}

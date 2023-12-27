@@ -1,0 +1,137 @@
+.dashboard-modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.316);
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.dashboard-modal {
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  position: relative;
+  top: 100px;
+  width: 1036px;
+  margin: auto;
+  height: 73vh;
+  z-index: 1;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 16px 0;
+  overflow-y: scroll;
+}
+
+.dashboard-modal-left-chart,
+.dashboard-modal-right-chart-suggestions {
+  /* border: 1px solid rgb(197, 197, 197);
+  border-radius: 4px; */
+  padding: 16px;
+  width: 48%;
+}
+
+.dashboard-modal-dropdown {
+  width: 100%;
+  background-color: #6b768a0d;
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  margin-bottom: 16px;
+}
+
+.dashboard-modal-options {
+  display: flex;
+  justify-content: flex-start;
+  padding: 16px 0;
+}
+.dashboard-modal-options span {
+  width: 50%;
+}
+.dashboard-modal-right-chart-suggestions-buttons {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  margin-bottom: 5px;
+}
+.dashboard-modal-right-chart-suggestions-buttons button {
+  width: 50%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #039;
+}
+.dashboard-modal-right-chart-suggestions-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.dashboard-modal-right-chart-suggestions_search {
+  background-color: #6b768a0d;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 34px;
+  padding: 2px;
+}
+.dashboard-modal-right-chart-suggestions_search input {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.dashboard-modal-right-chart-suggestions_search img {
+  height: 80%;
+}
+.dashboard-modal-right-chart-suggestions-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dashboard-modal-right-chart-suggestions-list > div {
+  width: 48%;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.dashboard-modal-close-button {
+  position: relative;
+  top: 110px;
+  width: 80px;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dashboard-modal-right-alerts select {
+  width: 100%;
+  background-color: #6b768a0d;
+  border: none;
+  outline: none;
+  margin-bottom: 5px;
+  padding: 5px 0;
+}
+.dashboard-modal-right-alerts-images {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.dashboard-modal-right-alerts-images img {
+  width: 20%;
+}
+#overview{
+position: absolute;
+right: 20px;
+top:0px;
+  width: 118px;
+  height: 32px;
+  background-color: #003399;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 4px 13px 4px 7px;
+}

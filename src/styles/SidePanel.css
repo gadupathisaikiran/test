@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Monofett&family=Poppins&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+.integrationitem {
+  display: flex;
+  height: 35px;
+  align-items: center;
+  margin-left: 10px;
+  border-bottom: 1px solid #dedede;
+}
+#integrationheading {
+  color: #26282c;
+  font-family: Varela Round;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+#integrationtext {
+  margin-left: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+#integrationimg {
+  margin-left: 5px;
+}
+
+
+
+.sidepanel {
+  width: 20%;
+  /*max-width: 20%;
+  */transition: width 1s ease;
+  max-width: 400px;
+  width: 358px;
+  /* height: calc(100vh - 60px); */
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #eee;
+  -webkit-transition: width 1.2s ease;
+  -moz-transition: width 1.2s ease;
+  -ms-transition: width 1.2s ease;
+  -o-transition: width 1.2s ease;
+}
+.sidepanel-top-part{
+  flex: 8.8;
+  display: flex;
+  flex-direction: column;
+}
+.sidepanel-bottom-part{
+  flex: 1.2;
+}
+.sidepanel-bottom-part>span{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 0.5em;
+  cursor:pointer;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dedede;
+  width: 90%;
+  height: var(--height-h-10, 40px);
+
+  flex-shrink: 0;
+
+  flex-shrink: 0;
+  margin-left: 24px;
+  margin-right: 1px;
+}
+
+.searchbar img {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.bqAllApis {
+  display: flex;
+  flex-direction: column;
+}
+
+.bqHeadingParent {
+  display: flex;
+  width: 327px;
+  width: 90%;
+  margin-left: 24px;
+  height: 44px;
+  flex-shrink: 0;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.bqLogoParent {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bqLogoParent > img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.bqHeadingNameParent {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  /* margin-top: 15px; */
+}
+.bqHeadingNameParent::after {
+  /* color: ; */
+}
+
+.platform-set-up-details-1-left > img {
+  object-fit: contain;
+  height: 100px;
+  width: 100px;
+  margin-top: 10px !important;
+}
+
+.platform-set-up-details-1-left > img[src="/images/git.png"] {
+  object-fit: cover;
+}
+
+.bqApisNumberParent {
+  width: auto;
+  display: flex;
+  align-items: center;
+  border-radius: 20%;
+  margin-right: 10px;
+}
+
+#bqApisNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20%;
+  height: 24px;
+  width: 24px;
+  background-color: #dff7ff;
+}
+
+.bqLogsApiHeading {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* height: 55px; */
+  cursor: pointer;
+}
+
+
+.bqLogsApiLogoParent {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bqLogsApiHeadingNameParent {
+  width: 85%;
+  display: flex;
+  align-items: center;
+
+  justify-content: flex-start;
+  padding: 3%;
+}
+
+.create {
+  background-color: white;
+  /* padding: 5px; */
+  transition: background-color 0.2s ease;
+}
+
+.create:active {
+  background-color: #cfe2ff;
+  /* padding: 5px; */
+}
+
+.accordion-body {
+  padding: 0px !important;
+}
+
+.accordion-button {
+  padding: 0px !important;
+}
+.accordion-button::after {
+  margin-left: -5px !important;
+  display: none;
+}
+.accordion-item {
+  border: none !important;
+}
+.my-hr-line {
+  width: 309px;
+  height: 0px;
+  flex-shrink: 0;
+  stroke-width: 1px;
+  stroke: #eee;
+  margin: 0 22.5px 0 32.5px;
+  padding: 0;
+}
+.side-panel-accordion-arrows {
+  /* transition: transform 0.3s ease-in-out; */
+}
+.side-panel-search-input {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-panel-search-input > input {
+  width: 100%;
+  height: 100%;
+  margin-left: 24px;
+  border: none;
+  outline: none;
+}
+
+.bqLogsApiHeading-create {
+  padding: 3%;
+  width: 90%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+}
+.accordion-button:focus{
+  box-shadow: none !important;
+}
+.accordion-button:not(.collapsed){
+  border-radius: 5px 5px 0 0 !important;
+
+}
+.tagSearch-Container{
+  margin: 0.2em 1.2em;;
+}
+.tagSearch-Container em{
+  color: #dedede;
+}
+.rti--container{
+  --rti-main: #003399ce !important;
+}
+.rti--input{
+  width: 95% !important;
+}
+.accordion-button:not(.collapsed) {
+  background: none !important;
+}
+.activeApi {
+  background-color: #cfe2ff !important;
+}
+#summary{
+  width: 30px;
+  height: 30px;
+  margin:0 10px;
+}
+#summary>img{
+  width: 100%;
+  height: 100%;
+}
